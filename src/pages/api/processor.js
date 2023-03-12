@@ -26,7 +26,7 @@ async function saveFormData(fields, files, res) {
     // Buffer into String
     const fileContent = buffer.toString();
     
-    const json = JSON.stringify(await csvtojson({ delimiter: ";" }).fromString(fileContent), null, 4)
+    const json = JSON.stringify(await csvtojson({ delimiter: ";" }).fromString(fileContent))
     // console.log(json);
     // console.log(json)
     
